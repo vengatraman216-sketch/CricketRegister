@@ -38,6 +38,10 @@ public class PlayerController {
 	public List<Playerlist> getall() {
 		return service.getall();
 	}
+	@GetMapping("/status")
+	public String getStatus() {
+		return "Running Successfully";
+	}
 
 	@PutMapping("/update")
 	public Playerlist updated(@RequestParam Long id, @RequestBody Playerlist update) {
