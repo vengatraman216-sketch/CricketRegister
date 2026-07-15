@@ -42,6 +42,10 @@ public class PlayerController {
 	public String getStatus() {
 		return "Running Successfully";
 	}
+	@GetMapping("/statuschecking")
+	public String getStatuschecking() {
+		return "Running Successfully Checking";
+	}
 
 	@PutMapping("/update")
 	public Playerlist updated(@RequestParam Long id, @RequestBody Playerlist update) {
