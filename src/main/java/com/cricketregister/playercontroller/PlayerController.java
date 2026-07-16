@@ -40,11 +40,11 @@ public class PlayerController {
 	}
 	@GetMapping("/status")
 	public String getStatus() {
-		return "Running Successfully";
+		return "Player Status Running Successfully";
 	}
 	@GetMapping("/statuschecking")
 	public String getStatuschecking() {
-		return "Running Successfully Checking";
+		return "Player Status Checking Running Successfully";
 	}
 
 	@PutMapping("/update")
